@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --fontBig: 7em;
+  --fontxxxl: 5.5em;
+  --fontxxl: 3.4375em;
+  --fontxl: 2.75em;
+  --fontlg: 1.9375em;
+  --fontmd: 1.375em;
+  --fontsm: 1.125em;
+  --fontxs: 1em;
+  --fontxxs: 0.75em;
+
+  --dark: #000000;
+  --grey: #666666;
+  --greyLight: #979797;
+  --offWhite: #eeeeee;
+  --white: #ffffff;
+  --blue: #0071e3;
+  --blueRgba: "0, 113, 227";
+
+  --fontL: "Source Sans Pro light";
+  --fontR: "Source Sans Pro";
+
+  --gradient: #35c3f3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #fed2ce 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+// @font-face {
+//   font-family: "Source Sans Pro light";
+//   src: local("Source Sans Pro light"), url(${fontLight}) format("truetype");
+//   font-display: swap;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Source Sans Pro";
+//   src: local("Source Sans Pro"), url(${fontRegular}) format("truetype");
+//   font-display: swap;
+//   font-style: normal;
+// }
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
