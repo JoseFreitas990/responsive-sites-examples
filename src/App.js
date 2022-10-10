@@ -1,5 +1,6 @@
 import {} from "styled-components";
 import { GlobalStyle } from "./examples/Apple/GlobalStyles";
+import BatterySection from "./examples/Apple/sections/BatterySection";
 import DesignSection from "./examples/Apple/sections/DesignSection";
 import DisplaySection from "./examples/Apple/sections/DisplaySection";
 import HeroSection from "./examples/Apple/sections/HeroSection";
@@ -17,6 +18,7 @@ function App() {
       <DesignSection />
       <DisplaySection />
       <ProcessorSection />
+      <BatterySection />
     </>
   );
 }
