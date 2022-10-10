@@ -1,4 +1,6 @@
-import React from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
@@ -60,8 +62,25 @@ const Text = styled.p`
 `;
 
 const Quote = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const sectionRef = useRef(null);
+
+  useLayoutEffect(() => {
+    let Elem = sectionRef.current;
+    let trigger = ScrollTrigger.create({
+      trigger: Elem,
+      start: "top top",
+      pin: true,
+      pinSpacing: false,
+    });
+
+    return () => {
+      if (trigger) trigger.kill();
+    };
+  }, []);
+
   return (
-    <Section>
+    <Section ref={sectionRef}>
       <TextContainer>
         <Text delay='0s'>
           <span>&#8220; You can't connect the dots looking foward;</span>
