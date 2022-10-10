@@ -4,6 +4,7 @@ import DesignSection from "./examples/Apple/sections/DesignSection";
 import DisplaySection from "./examples/Apple/sections/DisplaySection";
 import HeroSection from "./examples/Apple/sections/HeroSection";
 import PhoneModel from "./examples/Apple/sections/PhoneModel";
+import ProcessorSection from "./examples/Apple/sections/ProcessorSection";
 import Quote from "./examples/Apple/sections/Quote";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <HeroSection />
       <DesignSection />
       <DisplaySection />
+      <ProcessorSection />
     </>
   );
 }
